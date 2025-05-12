@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        * {
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        .navbar {
+            position: fixed;
+            text-align: center;
+            background-color: rgb(14, 63, 82);
+            z-index: 1;
+        }
+
+        .nav-heading {
+            margin-top: 10px;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 20px;
+            color: white;
+        }
+
+        .nav-menu {
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-size: 17px;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .section1 {
+            position: fixed;
+            top: 11%;
+            width: 100%;
+            height: 600px;
+            padding: 0px;
+        }
+
+        .s1img {
+            position: fixed;
+            top: 11%;
+            width: 100%;
+            height: 600px;
+            padding: 0px;
+        }
+
+        .section1 img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .i1 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .i1 h1 {
+            margin: 50px 0px 0px 50px;
+        }
+
+        .i1 p {
+            margin: 0px 0px 0px 50px;
+        }
+
+        .section1 h1 {
+            text-shadow: 3px 3px 3px rgb(88, 110, 121);
+            color: white;
+            font-size: 50px;
+            padding-top: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .section2 {
+            top: 650px;
+            padding: 0px 0px 0px 50px;
+            width: 100%;
+            height: 600px;
+            background-color: white;
+        }
+
+        .section2 h1 {
+            text-align: center;
+            padding:50px 30px 30px 30px;
+        }
+
+        .c1 {
+            width: 240px;
+            height: 350px;
+            box-shadow: 2px 2px 2px 2px #333;
+            margin: 30px 0px 0px 35px;
+            text-align: center;
+            background-color: rgb(65, 131, 157);
+            transition: 1s;
+        }
+
+        .c1:hover {
+            background-color: orange;
+            transform: scale(1.1);
+
+        }
+
+        .icon1 {
+            width: 80px;
+            height: 80px;
+            border: 5px solid white;
+            border-radius: 360px;
+            margin: 20px 0px 0px 60px;
+        }
+
+        .c1 h3 {
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .c1 p {
+            text-align: justify;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(44, 2, 80);
+        }
+
+        .section3 {
+            width: 100%;
+            height: 360px;
+            background-color: white;
+            top: 850px;
+        }
+
+        .section3 h1 {
+            text-align: center;
+            padding:50px 30px 30px 30px;
+        }
+
+        .section3 h3 {
+            text-shadow: 2px 2px 3px rgb(243, 131, 62);
+            font-weight: bolder;
+            font-weight: 20px;
+            color: white;
+
+        }
+        .section3 p {
+
+            font-weight: bold;
+            font-weight: 15px;
+            color: rgb(249, 239, 239);
+            text-shadow: 2px 2px 2px #ac1414;
+        }
+
+        .p1 {
+            background-image: url(img3.jpg);
+            background-size: 100% 100%;
+        }
+
+        .p2 {
+            margin-left: 20px;
+            background-image: url(img6.jpg);
+            background-size: 100% 100%;
+        }
+
+        .p3 {
+            margin-left: 20px;
+            background-image: url(img4.jpg);
+            background-size: 100% 100%;
+        }
+
+        .p4 {
+            margin-left: 20px;
+            background-image: url(img5.jpg);
+            background-size: 100% 100%;
+        }
+
+        .col {
+            width: 270px;
+            transition: 1s;
+        }
+
+        .col:hover {
+            transform: scale(1.1);
+        }
+
+        .section4 {
+            height: 720px;
+            background-color: white;
+            top: 830px;
+        }
+
+        .section4 h2 {
+            margin-left: 30px;
+            padding: 20px;
+        }
+
+        .section4 img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .section4 p {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .s1 {
+            box-shadow: 3px 3px 7px #333;
+        }
+
+        .row {
+            margin-top: 30px;
+        }
+
+        .section5 {
+            top: 1000px;
+            background-color: white;
+            height: 400px;
+        }
+
+        .section5 h1 {
+            text-align: center;
+            padding: 50px 30px 30px 30px;
+            margin: 30px;
+        }
+
+        .section5 p {
+            padding: 15px 0px 0px 0px;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .section6 {
+            background-color: white;
+            height: 600px;
+            top: 1150px;
+        }
+
+        .section6 h1 {
+            text-align: center;
+            padding:50px 30px 30px 30px;
+        }
+
+        .section6 input,
+        textarea,
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .Mail {
+            margin: 20px 0px 0px 300px;
+        }
+
+        .section6 h3 {
+            margin: 0px 0px 30px;
+        }
+
+        .form {
+            margin: 20px 0px 0px 100px;
+        }
+
+        .section6 p {
+            font-size: 17px;
+            margin-top: 25px;
+        }
+
+        .d1 {
+            height: 100%;
+            width: 270px;
+            background-color: rgba(0, 0, 0, 0.489);
+            margin-left: -15px;
+        }
+
+        .section7 {
+            top: 1300px;
+            background-color: rgb(241, 239, 239);
+            width: 100%;
+            height: 100px;
+        }
+
+        .section7 p {
+            font-size: 18px;
+            text-align:center;
+            margin: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 navbar">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 nav-heading">
+            <p>LEOPARD</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 nav-menu">
+            <a href="">Home</a>
+            <a href="#t2">About</a>
+            <a href="#t3">Features</a>
+            <a href="#t4">Shop</a>
+            <a href="#t1">Contact</a>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section1">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 s1img">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 i1"
+            style="background-color: rgba(0, 0, 0, 0.423); height: 600px; width: 100%;">
+            <h1>LEOPARD</h1>
+            <P>Presenting India Ka Bike | India's Fastest Bike Ever
+            </P>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section2" id="t3">
+        <h1><b>Features</b></h1>
+        <hr>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 c1">
+            <div class="icon1">
+                <h2 style="margin: 20px;"><span class="glyphicon glyphicon-wrench" aria-hidden="true"
+                        style="color: white;"></span></h2>
+            </div>
+            <h3>Repair</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
+                inventore fugit magnam quod atque dicta nemo.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 c1">
+            <div class="icon1">
+                <h2 style="margin: 20px;"><span class="glyphicon glyphicon-time" aria-hidden="true"
+                        style="color: white;"></span></h2>
+            </div>
+            <h3>Speed</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
+                inventore fugit magnam quod atque dicta nemo.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 c1">
+            <div class="icon1">
+                <h2 style="margin: 20px;"><span class="glyphicon glyphicon-cog" aria-hidden="true"
+                        style="color: white;"></span></h2>
+            </div>
+            <h3>Spair parts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
+                inventore fugit magnam quod atque dicta nemo.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 c1">
+            <div class="icon1">
+                <h2 style="margin: 20px;"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"
+                        style="color: white;"></span></h2>
+            </div>
+            <h3>Tire sales</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus aliquid perferendis
+                inventore fugit magnam quod atque dicta nemo.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section3" id="t4">
+        <h1><b>Shop</b></h1>
+        <hr>
+
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col p1">
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d1">
+                    <h3>Bikes</h3>
+                    <p><i>Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit.</i>
+                        <button type="button" class="btn-warning"
+                            style="padding: 5px; margin: 10px; border-radius: 10px;">Shop
+                            now</button>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col p2">
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d1">
+                    <h3>Wheels</h3>
+                    <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</i>
+                        <button type="button" class="btn-warning"
+                            style="padding: 5px; margin: 10px; border-radius: 10px;">Shop
+                            now</button>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col p3">
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d1">
+                    <h3>Helmets</h3>
+                    <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</i>
+                        <button type="button" class="btn-warning"
+                            style="padding: 5px; margin: 10px; border-radius: 10px;">Shop
+                            now</button>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col p4">
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d1">
+                    <h3>Cloths</h3>
+                    <p><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</i>
+                        <button type="button" class="btn-warning"
+                            style="padding: 5px; margin: 10px; border-radius: 10px;">Shop
+                            now</button>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section4">
+        <h2><B>Newly Arrived</B></h2>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img8.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (39% off)</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                    <img src="img9.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (27% off)</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                    <img src="img10.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (32% off)</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img12.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (45% off) </p>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img13.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (17% off)</p>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <img src="img11.jpg" alt="">
+                    <p class="s1">INR XX,XXX/- (21% off)</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section5" id="t2">
+
+        <div class="container">
+
+            <h1><b>About us</b></h1>
+            <hr>
+            <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section6" id="t1">
+
+        <div class="container">
+            <h1><b>Contact us</b></h1>
+            <hr>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 form">
+                <h3><b>Send A Message</b></h3>
+                <form action="" method="POST" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Name*">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="" placeholder="Phone*">
+                    </div>
+
+                    <textarea name="" id="input" class="form-control" rows="3" required="required"
+                        placeholder="Message*"></textarea>
+
+                    <button type="submit" class="btn btn-info" style="box-shadow: 3px 3px 3px #333;">Send</button>
+                </form>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 Mail">
+                <h3><b>Mail us</b></h3>
+                <p>Leopard Pvt. Ltd.<br>
+                    Saltlake, Kolkata <br>
+                    West Bengal, India <br>
+                    Pin: 700XXX <br>
+                    Phone: +91 9xxxxxxxx <br>
+                    Email: example@domain.com <br>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 section7">
+        <p>
+            Copyright © 2017-18 Leopard Pvt. Ltd.
+        </p>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
